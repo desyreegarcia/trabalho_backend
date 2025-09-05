@@ -1,0 +1,54 @@
+Trabalho de Back-End - API de Músicas
+
+Desenvolvida em Java (Spring Boot) para gerenciar músicas.
+O sistema permite cadastrar, listar, deletar e atualizar músicas.
+
+Tecnologias utilizadas
+Java 17
+Spring Boot
+Spring Data JPA
+H2 Database
+Postman (para testes)
+
+Estrutura do projeto
+trabalho_backend
+ └── src/main/java/com/example/trabalho_backend
+      ├── controller       -> Endpoints da API
+      │    └── MusicaController
+      ├── model            -> Classe de modelo
+      │    └── Musica
+      ├── repositorio      -> Interface de acesso ao banco
+      │    └── MusicaRepositorio
+      └── TrabalhoBackendApplication -> Classe principal
+
+Clone este repositório:
+
+git clone https://github.com/seu-usuario/trabalho_backend.git
+
+O servidor iniciará em: http://localhost:8080
+
+Endpoints:
+Cadastrar uma nova música => POST /musicas
+    Exemplo de corpo JSON:
+
+    {
+        "nome": "Tempo Perdido",
+        "cantor": "Legião Urbana",
+        "genero": "Rock"
+    }
+
+Listar todas as músicas => GET /musicas
+Buscar uma música pelo ID => GET /musicas/{id}
+Atualizar os dados de uma música => PUT /musicas/{id}
+Deletar uma música => DELETE /musicas/{id}
+
+Testes no Postman:
+Criar uma nova coleção chamada API de Músicas.
+Adicionar os endpoints acima (POST, GET, PUT, DELETE).
+Configurar o corpo da requisição em JSON.
+
+Autoria: Desyree Garcia
+RU: 986134
+Curso: Análise e Desenvolvimento de Sistemas (ADS)
+Disciplina: Back-End
+Faculdade: Uninter
