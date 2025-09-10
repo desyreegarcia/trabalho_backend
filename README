@@ -23,7 +23,7 @@ trabalho_backend
 
 Clone este repositório:
 
-git clone https://github.com/seu-usuario/trabalho_backend.git
+https://github.com/desyreegarcia/trabalho_backend.git
 
 O servidor iniciará em: http://localhost:8080
 
@@ -32,9 +32,9 @@ Cadastrar uma nova música => POST /musicas
     Exemplo de corpo JSON:
 
     {
-        "nome": "Tempo Perdido",
-        "cantor": "Legião Urbana",
-        "genero": "Rock"
+        "nome": "Dona de Mim",
+        "cantor": "Iza",
+        "genero": "Pop"
     }
 
 Listar todas as músicas => GET /musicas
